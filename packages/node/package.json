@@ -1,0 +1,32 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/app.mjs",
+    "dev": "nodemon --exec ts-node src/index.mts",
+    "debug": "nodemon --exec \"node --inspect -r ts-node/register\" src/index.mts",
+    "tsc": "tsc",
+    "format": "biome format --write **/*.ts",
+    "lint": "biome lint --staged",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Matthew Laufer",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

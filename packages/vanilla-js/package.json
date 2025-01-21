@@ -1,0 +1,25 @@
+{
+  "name": "vanilla-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve",
+    "format": "biome format --write **/*.js",
+    "lint": "biome lint --staged",
+    "test": "vitest"
+  },
+  "keywords": [],
+  "author": "Matthew Laufer",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "jsdom": "^26.0.0",
+    "vitest": "^3.0.2"
+  },
+  "dependencies": {
+    "serve": "^14.2.4"
+  }
+}

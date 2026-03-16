@@ -2,31 +2,33 @@
   "name": "node",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/app.mjs",
-    "dev": "nodemon --exec ts-node src/index.mts",
-    "debug": "nodemon --exec \"node --inspect -r ts-node/register\" src/index.mts",
+    "start": "node dist/app.js",
+    "dev": "nodemon --exec node src/index.ts",
+    "debug": "nodemon --exec \"node --inspect\" src/index.ts",
     "tsc": "tsc",
     "format": "biome format --write .",
     "lint": "biome lint .",
-    "test": "vitest"
+    "test": "vitest",
+    "test:debug": "vitest --inspect-brk --no-file-parallelism"
   },
   "keywords": [],
   "author": "Matthew Laufer",
   "license": "MIT",
   "devDependencies": {
     "@biomejs/biome": "2.4.9",
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.10.7",
-    "nodemon": "^3.1.9",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.3",
-    "vitest": "^2.1.8"
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "nodemon": "^3.1.14",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3",
+    "vitest": "^4.1.2"
   },
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
   }
 }

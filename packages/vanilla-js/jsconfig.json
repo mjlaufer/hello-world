@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "checkJs": true,
+    "lib": ["dom", "dom.iterable", "ESNext"]
+  },
+  "include": ["src/**/*.js"],
+  "exclude": ["node_modules"]
+}

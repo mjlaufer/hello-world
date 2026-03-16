@@ -13,7 +13,7 @@ func greetingHandler(w http.ResponseWriter, r *http.Request) {
 	writeJSONResponse(w, Greeting{Greeting: "Hello, World!"})
 }
 
-func writeJSONResponse(w http.ResponseWriter, data interface{}) {
+func writeJSONResponse(w http.ResponseWriter, data any) {
 	w.Header().Set("Content-Type", "application/json")
 
 	if err := json.NewEncoder(w).Encode(data); err != nil {

@@ -1,5 +1,5 @@
 import { afterAll, beforeAll, describe, expect, it } from 'vitest';
-import { startServer, PORT, type Server } from './server.mts';
+import { startServer, PORT, type Server } from './server.ts';
 
 describe('server', () => {
     let server: Server;
@@ -11,7 +11,9 @@ describe('server', () => {
     });
 
     afterAll(async () => {
-        await server.close();
+        if (server.listening) {
+            await server.closeAsync();
+        }
     });
 
     it('should return greeting', async () => {

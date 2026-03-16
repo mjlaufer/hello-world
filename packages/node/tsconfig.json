@@ -22,8 +22,9 @@
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "sourceMap": true
   },
-  "include": ["src/**/*.mts"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }

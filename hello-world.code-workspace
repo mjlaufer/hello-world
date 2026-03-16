@@ -1,0 +1,25 @@
+{
+  "folders": [
+    { "path": "packages/go", "name": "go" },
+    { "path": "packages/node", "name": "node" },
+    { "path": "packages/vanilla-js", "name": "vanilla-js" },
+    { "path": "packages/next-js", "name": "next-js" }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "[go]": {
+      "editor.defaultFormatter": "golang.go"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "go.lintTool": "golangci-lint",
+    "go.lintOnSave": "workspace"
+  }
+}

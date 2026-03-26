@@ -8,15 +8,15 @@
     "dev": "nodemon --exec ts-node src/index.mts",
     "debug": "nodemon --exec \"node --inspect -r ts-node/register\" src/index.mts",
     "tsc": "tsc",
-    "format": "biome format --write **/*.ts",
-    "lint": "biome lint --staged",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
     "test": "vitest"
   },
   "keywords": [],
   "author": "Matthew Laufer",
   "license": "MIT",
   "devDependencies": {
-    "@biomejs/biome": "1.9.4",
+    "@biomejs/biome": "2.4.9",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.7",

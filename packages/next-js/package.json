@@ -6,8 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "format": "biome format --write ./*.ts ./**/*.tsx",
-    "lint": "biome lint --staged",
+    "format": "biome format --write .",
+    "lint": "biome lint .",
     "test": "vitest"
   },
   "dependencies": {
@@ -16,7 +16,7 @@
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
+    "@biomejs/biome": "^2.4.9",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@types/node": "^20",
